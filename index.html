@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Przygód RPG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generator Przygód RPG</h1>
+        
+        <div class="gem-training-section">
+            <h2>Szkolenie Gemów</h2>
+            <div class="gem-inputs">
+                <div class="input-group">
+                    <label for="gemName">Nazwa Gema:</label>
+                    <input type="text" id="gemName" placeholder="Wprowadź nazwę Gema">
+                </div>
+                <div class="input-group">
+                    <label for="gemDescription">Opis Gema:</label>
+                    <textarea id="gemDescription" placeholder="Opisz charakterystykę Gema..."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="gemPersonality">Osobowość:</label>
+                    <textarea id="gemPersonality" placeholder="Opisz osobowość Gema..."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="gemKnowledge">Wiedza i umiejętności:</label>
+                    <textarea id="gemKnowledge" placeholder="Opisz wiedzę i umiejętności Gema..."></textarea>
+                </div>
+            </div>
+            <button id="trainGemButton">Szkol Gema</button>
+            <div id="trainedGems" class="trained-gems-list"></div>
+        </div>
+
+        <div class="encounter-section">
+            <h2>Generator Przygód</h2>
+            <div class="input-section">
+                <textarea id="encounterDescription" placeholder="Opisz swoją przygodę..."></textarea>
+                <select id="gemSelector" class="gem-selector">
+                    <option value="">Wybierz Gema do generowania</option>
+                </select>
+                <button id="generateButton">Generuj Przygodę</button>
+            </div>
+            <div class="output-section">
+                <h2>Wygenerowana Przygoda:</h2>
+                <div id="generatedEncounter" class="output-box"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
